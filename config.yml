@@ -2,12 +2,10 @@
 
 libraries:                           # This is called out once within the config.yml file
   Movies:                            # These are names of libraries in your Plex
-    remove_overlays: false           # Set this to true to remove all overlays
+    remove_overlays: false             # Set this to true to remove all overlays
     collection_files:
-        asset_directory: config/assets/users
       # This line points to the templated file on Github
       #- url: https://raw.githubusercontent.com/sl4ppy/kometa/main/collections/movie-requests.yml
-
       # This line points to the local copy of the file for customization
       - file: config/collections/movie-requests.yml
       
