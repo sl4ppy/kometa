@@ -666,7 +666,7 @@ overlays:
       weight: 425
     tmdb_network: 293
     
-  # Exists in inherited https://github.com/s0len/meta-manager-config/blob/main/overlays/network_fallback.yml    
+  # Exists in inherited https://github.com/sl4ppy/kometa/blob/main/overlays/network_fallback.yml    
   # Plex:
   #   overlay:
   #     name: Plex

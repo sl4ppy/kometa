@@ -4,12 +4,16 @@ libraries:                           # This is called out once within the config
   Movies:                            # These are names of libraries in your Plex
     remove_overlays: false           # Set this to true to remove all overlays
     collection_files:
-      - file: config/collections/movie-requests.yml
         asset_directory: config/assets/users
-      
-      - file: config/collections/holidays/holiday-movies.yml
+      # 
+      This line points to the templated file on Github
+      #- url: https://raw.githubusercontent.com/sl4ppy/kometa/main/collections/movie-requests.yml
 
-      - repo: collections/holidays/movies
+      # This line points to the local copy of the file for customization
+      - file: config/collections/movie-requests.yml
+      
+      - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/collections/holidays/holiday-movies.yml
+      #- repo: collections/holidays/movies
       - repo: collections/random/movies
       - repo: collections/separators/movies
 
@@ -69,15 +73,18 @@ libraries:                           # This is called out once within the config
     remove_overlays: false           # Set this to true to remove all overlays
     report_path: config/missing/TV_report.yml
     collection_files:
-      - file: config/collections/series-requests.yml
+      # This line points to the templated file on Github
+      #- url: https://raw.githubusercontent.com/sl4ppy/kometa/main/collections/series-requests.yml
 
+      # This line points to the local copy of the file for customization
+      - file: config/collections/series-requests.yml
       - repo: collections/new/shows
       - repo: collections/separators/shows 
 
     overlay_files:
-      - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
-      - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
-      - file: config/overlays/overlay_shows.yml
+      - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/status.yml
+      - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network_fallback.yml
+      - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/overlay_shows.yml
       
       - default: network
         template_variables:
@@ -87,10 +94,10 @@ libraries:                           # This is called out once within the config
           vertical_align: top
           back_width: 1000
           back_height: 1500
-          file: config/overlays/network-top-left/<<key>>.png
-          file_#0: config/overlays/network-top-left/#0.png
-          #url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
-          #url_#0:  https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/%230.png
+          #file: config/overlays/network-top-left/<<key>>.png
+          #file_#0: config/overlays/network-top-left/#0.png
+          url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/<<key>>.png
+          url_#0:  https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/%230.png
           back_color: 00 
 
       - default: ratings

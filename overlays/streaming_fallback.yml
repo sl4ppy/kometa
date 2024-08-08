@@ -2,7 +2,7 @@ overlays:
   Plex:
     overlay:
       name: plex
-      url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/Plex.png
+      url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/Plex.png
       group: ICONS
       weight: 100
     plex_all: true
@@ -12,4 +12,4 @@ overlays:
           network: Crave
     overlay:
       name: crave
-      url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/Crave.png  
+      url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/Crave.png  
