@@ -75,8 +75,8 @@ libraries:                           # This is called out once within the config
 
       # This line points to the local copy of the file for customization
       - file: config/collections/series-requests.yml
-      - repo: collections/new/shows
-      - repo: collections/separators/shows 
+      #- repo: collections/new/shows
+      #- repo: collections/separators/shows 
 
     overlay_files:
       - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/status.yml
@@ -91,10 +91,10 @@ libraries:                           # This is called out once within the config
           vertical_align: top
           back_width: 1000
           back_height: 1500
-          #file: config/overlays/network-top-left/<<key>>.png
-          #file_#0: config/overlays/network-top-left/#0.png
-          url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/<<key>>.png
-          url_#0:  https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/%230.png
+          file: config/overlays/network-top-left/<<key>>.png
+          file_#0: config/overlays/network-top-left/#0.png
+          #url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/<<key>>.png
+          #url_#0:  https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/%230.png
           back_color: 00 
 
       - default: ratings
