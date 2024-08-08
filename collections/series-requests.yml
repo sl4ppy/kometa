@@ -1,0 +1,68 @@
+#####################################################
+#              Series User Tag Collections                   #
+#####################################################
+
+collections:
+  Sl4ppy's Requested Series:
+    sonarr_taglist: "1 - sl4ppy"
+    sort_title: "!000_Sl4ppy's Requested Series"
+    label.sync: ["PMM","Sl4ppy"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  Kristinrae1124's Requested Series:
+    sonarr_taglist: "6 - kristinrae1124"
+    sort_title: "!000_Kristinrae1124's Requested Series"
+    label.sync: ["PMM","kristinrae1124"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  Marktx's Requested Series:
+    sonarr_taglist: "7 - marktx"
+    sort_title: "!000_Marktx's Requested Series"
+    label.sync: ["PMM","marktx"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  mwil11's Requested Series:
+    sonarr_taglist: "8 - mwil11"
+    sort_title: "!000_mwil11's Requested Series"
+    label.sync: ["PMM","mwil11"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  Sl4ppy13's Requested Series:
+    sonarr_taglist: "9 - sl4ppy13"
+    sort_title: "!000_Sl4ppy13's Requested Series"
+    label.sync: ["PMM","sl4ppy13"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  Thugmoor's Requested Series:
+    sonarr_taglist: "10 - Thugmoor"
+    sort_title: "!000_Thugmoor's Requested Series"
+    label.sync: ["PMM","Thugmoor"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  Chrystal's Requested Series:
+    sonarr_taglist: "11 - chrystal"
+    sort_title: "!000_Chrystal's Requested Series"
+    label.sync: ["PMM","chrystal"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+  
+  Mark_wilner's Requested Series:
+    sonarr_taglist: "12 - mark_wilner"
+    sort_title: "!000_Mark_wilner's Requested Series"
+    label.sync: ["PMM","mark_wilner"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true

@@ -1,0 +1,694 @@
+overlays:
+
+### SHOW STATUS ###
+
+  # Weekly:
+  #   overlay:
+  #     name: airing
+  #     group: STATUS
+  #     weight: 900
+  #   tmdb_on_the_air: 5000
+
+  # Returning:
+  #   overlay:
+  #     name: returning
+  #     group: STATUS
+  #     weight: 800
+  #   plex_all: true
+  #   filters:
+  #     tmdb_status:
+  #        - returning
+  #        - planned
+  #        - production
+
+  # Ended:
+  #   overlay:
+  #     name: ended
+  #     group: STATUS
+  #     weight: 600
+  #   plex_all: true
+  #   filters:
+  #     tmdb_status:
+  #        - ended
+
+  # Cancelled:
+  #   overlay:
+  #     name: cancelled
+  #     group: STATUS
+  #     weight: 700
+  #   plex_all: true
+  #   filters:
+  #     tmdb_status:
+  #        - canceled
+
+### TMDB TRENDING / NETWORKS ###
+
+  Netflix:
+    overlay:
+      name: Netflix
+      group: ICONS
+      weight: 800
+    tmdb_network: 213
+
+  Disney:
+    overlay:
+      name: Disney
+      group: ICONS
+      weight: 775
+    tmdb_network: 2739
+
+  HBO:
+    overlay:
+      name: HBO
+      group: ICONS
+      weight: 700
+    tmdb_network: 49, 2593, 3308
+    
+  MAX:
+    overlay:
+      name: Max
+      group: ICONS
+      weight: 725
+    tmdb_network: 5479, 6783, 3186, 5484, 5485, 5666
+
+  Viaplay:
+    overlay:
+      name: Viaplay
+      group: ICONS
+      weight: 690
+    tmdb_network: 1585, 2406, 3504, 2869, 6239, 6653, 7210, 4367
+
+  # TV4Play:
+  #   overlay:
+  #     name: Plex
+  #     group: ICONS
+  #     weight: 685
+  #   tmdb_network: 352, 7159, 7253
+
+  Hulu:
+    overlay:
+      name: Hulu
+      group: ICONS
+      weight: 650
+    tmdb_network: 453
+
+  Paramount:
+    overlay:
+      name: Paramount Network
+      group: ICONS
+      weight: 625
+    tmdb_network: 4330, 1709
+
+  Paramount+:
+    overlay:
+      name: Paramount+
+      group: ICONS
+      weight: 625
+    tmdb_network: 4330, 1709
+
+  AppleTV:
+    overlay:
+      name: Apple TV+
+      group: ICONS
+      weight: 750
+    tmdb_network: 2552
+
+  Prime:
+    overlay:
+      name: Prime Video
+      group: ICONS
+      weight: 675
+    tmdb_network: 1024
+    
+  AcornTV:
+    overlay:
+      name: Acorn TV
+      group: ICONS
+      weight: 425
+    tmdb_network: 2697
+
+  AmazonKids+:
+    overlay:
+      name: Amazon Kids+
+      group: ICONS
+      weight: 425
+    tmdb_network: 5533
+
+  BBCOne:
+    overlay:
+      name: BBC One
+      group: ICONS
+      weight: 600
+    tmdb_network: 4
+    
+  BBCAmerica:
+    overlay:
+      name: BBC America
+      group: ICONS
+      weight: 600
+    tmdb_network: 493
+    
+  BBCThree:
+    overlay:
+      name: BBC Three
+      group: ICONS
+      weight: 600
+    tmdb_network: 3
+
+  BBCFour:
+    overlay:
+      name: BBC Four
+      group: ICONS
+      weight: 575
+    tmdb_network: 100
+
+  CW:
+    overlay:
+      name: The CW
+      group: ICONS
+      weight: 550
+    tmdb_network: 71, 1049
+    
+  WB:
+    overlay:
+      name: The WB
+      group: ICONS
+      weight: 5500
+    tmdb_network: 21
+
+  Showtime:
+    overlay:
+      name: Showtime
+      group: ICONS
+      weight: 525
+    tmdb_network: 67
+
+  CBS:
+    overlay:
+      name: CBS
+      group: ICONS
+      weight: 500
+    tmdb_network: 16
+
+  ABC:
+    overlay:
+      name: ABC
+      group: ICONS
+      weight: 450
+    tmdb_network: 2, 18, 75
+
+  ABCUS:
+    overlay:
+      name: ABC
+      group: ICONS
+      weight: 440
+    tmdb_network: 2
+
+  ABCTV:
+    overlay:
+      name: ABC
+      group: ICONS
+      weight: 440
+    tmdb_network: 2   
+
+  ABCFamily:
+    overlay:
+      name: ABC Family
+      group: ICONS
+      weight: 430
+    tmdb_network: 75
+
+  ABCKids:
+    overlay:
+      name: ABC Kids
+      group: ICONS
+      weight: 430
+    tmdb_network: 2854
+
+  ABSCBN:
+    overlay:
+      name: ABS-CBN
+      group: ICONS
+      weight: 430
+    tmdb_network: 20    
+
+  AHC:
+    overlay:
+      name: AHC
+      group: ICONS
+      weight: 425
+    tmdb_network: 1430
+
+  ALIBI:
+    overlay:
+      name: Alibi
+      group: ICONS
+      weight: 425
+    tmdb_network: 3515  
+
+  AMC:
+    overlay:
+      name: AMC
+      group: ICONS
+      weight: 425
+    tmdb_network: 174
+    
+  AMC+:
+    overlay:
+      name: AMC+
+      group: ICONS
+      weight: 425
+    tmdb_network: 4661, 6400
+    
+  MGM+:
+    overlay:
+      name: MGM+
+      group: ICONS
+      weight: 425
+    tmdb_network: 6219
+    
+  BET:
+    overlay:
+      name: BET
+      group: ICONS
+      weight: 425
+    tmdb_network: 24
+   
+  BET+:
+    overlay:
+      name: BET+
+      group: ICONS
+      weight: 425
+    tmdb_network: 3343
+  
+  CRAVE:
+    overlay:
+      name: Crave
+      group: ICONS
+      weight: 425
+    tmdb_network: 1344
+    
+  DCUniverse:
+    overlay:
+      name: DC Universe
+      group: ICONS
+      weight: 425
+    tmdb_network: 2243
+    
+  DiscoveryKids:
+    overlay:
+      name: Discovery Kids
+      group: ICONS
+      weight: 425
+    tmdb_network: 22, 2630
+    
+  Discovery:
+    overlay:
+      name: Discovery
+      group: ICONS
+      weight: 425
+    tmdb_network: 3900
+    
+  Discovery+:
+    overlay:
+      name: discovery+
+      group: ICONS
+      weight: 425
+    tmdb_network: 4353, 4440, 4462, 4741, 4784, 4883, 4983, 5192
+    
+  FoxKids:
+    overlay:
+      name: Fox Kids
+      group: ICONS
+      weight: 425
+    tmdb_network: 2446, 2686, 4522, 5996
+    
+  FOX:
+    overlay:
+      name: FOX
+      group: ICONS
+      weight: 425
+    tmdb_network: 19, 303
+    
+  FX:
+    overlay:
+      name: FX
+      group: ICONS
+      weight: 425
+    tmdb_network: 88, 1641
+
+  FXX:
+    overlay:
+      name: FXX
+      group: ICONS
+      weight: 425
+    tmdb_network: 1035
+ 
+  YouTube:
+    overlay:
+      name: YouTube
+      group: ICONS
+      weight: 425
+    tmdb_network: 247, 1436
+    
+  Peacock:
+    overlay:
+      name: Peacock
+      group: ICONS
+      weight: 425
+    tmdb_network: 3353
+    
+  Channel4:
+    overlay:
+      name: Channel 4
+      group: ICONS
+      weight: 425
+    tmdb_network: 1988, 26
+    
+  HistoryChannel:
+    overlay:
+      name: History
+      group: ICONS
+      weight: 425
+    tmdb_network: 65, 1354, 2360, 2382, 3541, 5433, 2481
+    
+  Epix:
+    overlay:
+      name: Epix
+      group: ICONS
+      weight: 425
+    tmdb_network: 922
+    
+  SYFY:
+    overlay:
+      name: Syfy
+      group: ICONS
+      weight: 425
+    tmdb_network: 77, 3701, 6914, 105, 471,1630
+    
+  Starz:
+    overlay:
+      name: Starz
+      group: ICONS
+      weight: 425
+    tmdb_network: 318, 758
+    
+  NBC:
+    overlay:
+      name: NBC
+      group: ICONS
+      weight: 425
+    tmdb_network: 6, 2462, 581
+    
+  USANetwork:
+    overlay:
+      name: USA Network
+      group: ICONS
+      weight: 425
+    tmdb_network: 30
+    
+  NickJr:
+    overlay:
+      name: Nick Jr
+      group: ICONS
+      weight: 425
+    tmdb_network: 35
+    
+  Nickelodeon:
+    overlay:
+      name: Nick
+      group: ICONS
+      weight: 425
+    tmdb_network: 13, 286, 416, 474
+    
+  DisneyChannel:
+    overlay:
+      name: Disney Channel
+      group: ICONS
+      weight: 425
+    tmdb_network: 54
+    
+  DisneyJunior:
+    overlay:
+      name: Disney Junior
+      group: ICONS
+      weight: 425
+    tmdb_network: 281, 2325, 2771
+
+  DisneyXD:
+    overlay:
+      name: Disney XD
+      group: ICONS
+      weight: 425
+    tmdb_network: 44, 2324, 2326, 5137, 6244, 6463, 6752
+    
+  TNT:
+    overlay:
+      name: TNT
+      group: ICONS
+      weight: 425
+    tmdb_network: 41, 1191
+    
+  Hallmark:
+    overlay:
+      name: Hallmark
+      group: ICONS
+      weight: 425
+    tmdb_network: 384, 2300, 2853, 3438
+    
+  CartoonNetwork:
+    overlay:
+      name: Cartoon Network
+      group: ICONS
+      weight: 425
+    tmdb_network: 56
+    
+  Spike:
+    overlay: 
+      name: Spike
+      group: ICONS
+      weight: 425
+    tmdb_network: 55, 1735
+  
+  MTV:
+    overlay: 
+      name: MTV
+      group: ICONS
+      weight: 425
+    tmdb_network: 17, 33
+    
+  Sky:
+    overlay: 
+      name: Sky
+      group: ICONS
+      weight: 425
+    tmdb_network: 107, 1063, 5237
+
+  Cinemax:
+    overlay: 
+      name: Cinemax
+      group: ICONS
+      weight: 425
+    tmdb_network: 6161, 359
+
+  Freeform:
+    overlay: 
+      name: Freeform
+      group: ICONS
+      weight: 425
+    tmdb_network: 1267
+    
+  Bravo:
+    overlay: 
+      name: Bravo
+      group: ICONS
+      weight: 425
+    tmdb_network: 74, 312, 485
+    
+  PBS:
+    overlay: 
+      name: PBS
+      group: ICONS
+      weight: 425
+    tmdb_network: 14, 5562
+    
+  PBSKids:
+    overlay: 
+      name: PBS Kids
+      group: ICONS
+      weight: 425
+    tmdb_network: 122
+    
+  truTV:
+    overlay: 
+      name: truTV
+      group: ICONS
+      weight: 425
+    tmdb_network: 364
+    
+  Lifetime:
+    overlay: 
+      name: Lifetime
+      group: ICONS
+      weight: 425
+    tmdb_network: 34, 2974, 6595, 7103
+    
+  AdultSwim:
+    overlay: 
+      name: Adult Swim
+      group: ICONS
+      weight: 425
+    tmdb_network: 80, 5629, 6929
+    
+  CNN:
+    overlay: 
+      name: CNN
+      group: ICONS
+      weight: 425
+    tmdb_network: 59
+    
+  UPN:
+    overlay: 
+      name: UPN
+      group: ICONS
+      weight: 425
+    tmdb_network: 40, 7008
+    
+  TV Land:
+    overlay: 
+      name: TV Land
+      group: ICONS
+      weight: 425
+    tmdb_network: 397
+    
+  TBS:
+    overlay: 
+      name: TBS
+      group: ICONS
+      weight: 425
+    tmdb_network: 5012, 5625, 68, 160
+    
+  HGTV:
+    overlay: 
+      name: HGTV
+      group: ICONS
+      weight: 425
+    tmdb_network: 210
+    
+  Boomerang:
+    overlay: 
+      name: Boomerang
+      group: ICONS
+      weight: 425
+    tmdb_network: 523, 5459, 7017
+    
+  Roku:
+    overlay: 
+      name: The Roku Channel
+      group: ICONS
+      weight: 425
+    tmdb_network: 4692
+    
+  IFC:
+    overlay: 
+      name: IFC
+      group: ICONS
+      weight: 425
+    tmdb_network: 124, 672, 6956
+    
+  CBCtelevision:
+    overlay: 
+      name: CBC Television
+      group: ICONS
+      weight: 425
+    tmdb_network: 23
+    
+  A&E:
+    overlay: 
+      name: A&E
+      group: ICONS
+      weight: 425
+    tmdb_network: 129, 2639, 3688, 5202
+    
+  AmazonFreevee:
+    overlay: 
+      name: Freevee
+      group: ICONS
+      weight: 425
+    tmdb_network: 5865, 6550
+    
+  ComedyCentral:
+    overlay: 
+      name: Comedy Central
+      group: ICONS
+      weight: 425
+    tmdb_network: 278, 1087, 2178, 2436, 3082, 4535
+    
+  VH1:
+    overlay: 
+      name: VH1
+      group: ICONS
+      weight: 425
+    tmdb_network: 2803, 158, 664
+    
+  FamilyChannel:
+    overlay: 
+      name: Family Channel
+      group: ICONS
+      weight: 425
+    tmdb_network: 197
+    
+  UniversalKids:
+    overlay: 
+      name: Universal Kids
+      group: ICONS
+      weight: 425
+    tmdb_network: 2133
+    
+  E!:
+    overlay: 
+      name: E!
+      group: ICONS
+      weight: 425
+    tmdb_network: 76, 7136
+    
+  Shudder:
+    overlay: 
+      name: Shudder
+      group: ICONS
+      weight: 425
+    tmdb_network: 2949
+    
+  IONTelevision:
+    overlay: 
+      name: ION Television
+      group: ICONS
+      weight: 425
+    tmdb_network: 293
+    
+  # Exists in inherited https://github.com/s0len/meta-manager-config/blob/main/overlays/network_fallback.yml    
+  # Plex:
+  #   overlay:
+  #     name: Plex
+  #     group: ICONS
+  #     weight: 100
+  #   plex_all: true
+
+### TMDB TRENDING / NETWORKS ###
+
+
+# Shows:
+#     remove_overlays: false
+#     reapply_overlay: false
+#     collection_files: *metadata01
+#     overlay_files: &overlay03
+      
+# file: config/overlays/Shows-returning-soon-overlay.yml
+# file: config/overlays/overlays_shows.yml
+# pmm: commonsense 
+# template_variables:
+#   horizontal_align: right
+# vertical_offset: 25
+#           vertical_align: bottom
+#     operations: &operations02
+# mass_content_rating_update: omdb
