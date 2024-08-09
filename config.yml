@@ -93,6 +93,7 @@ libraries:                           # This is called out once within the config
           back_height: 1500
           file: config/overlays/network-top-left/<<key>>.png
           file_#0: config/overlays/network-top-left/#0.png
+          file_Disney: config/overlays/network-top-left/Disney.png
           #url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/<<key>>.png
           #url_#0:  https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/network-top-left/%230.png
           back_color: 00 
@@ -190,7 +191,7 @@ settings:
   playlist_exclude_users:
   playlist_report: false
   verify_ssl: true
-  custom_repo: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/
+  custom_repo: https://raw.githubusercontent.com/sl4ppy/kometa
   overlay_artwork_filetype: jpg
   overlay_artwork_quality: 75
 webhooks:                            # Can be individually specified per library as well
