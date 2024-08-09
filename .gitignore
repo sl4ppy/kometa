@@ -3,3 +3,4 @@ sftp-config.json
 UUID
 *.sublime-project
 *.sublime-workspace
+config.yml
