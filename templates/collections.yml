@@ -1,274 +1,282 @@
 external_templates:
   git: PMM/collections
 
-
 templates:
-  collections:
-    Prerolls:
-      build_collection: false
-      schedule: <<schedule>>
-      server_preroll: <<videos>>
+  Promoted:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 000_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule: daily  # Override this in the collection
+    visible_library: true
+    url_poster: <<poster_url>>
 
-    New:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 010_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule: daily
-      visible_library: true
-      url_poster: <<poster_url>>
-
-    InMemoriamActor:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      tmdb_person: <<tmdb_id>>
-      smart_filter:
-        sort_by: release.desc
-        any:
-          actor: tmdb
-        sort_title: 020_+<<level>>_<<sort_title_name>>
-        sync_mode: append
-      visible_library: true
-      visible_shared: true
-      visible_home: true
-
-    InMemoriamDirector:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      tmdb_person: <<tmdb_id>>
-      smart_filter:
-        sort_by: release.desc
-        any:
-          director: tmdb
-        sort_title: 021_+<<level>>_<<sort_title_name>>
-        sync_mode: append
-      visible_library: true
-      visible_shared: true
-      visible_home: true
-
-    Chart:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 040_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule: daily
-      visible_library: true
-      url_poster: <<poster_url>>
-
-    Award:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 050_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: false
-      url_poster: <<poster_url>>
-
-    ActorAward:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      smart_filter: # smart filter means Plex will automatically update the collection when new movies are added, rather than having to rerun the script
-        all:
-          actor: tmdb
-      tmdb_person: <<tmdb>>
-      sort_title: 051_+<<level>>_<<sort_title_name>>
+  InMemoriamActor:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_person: <<tmdb_id>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        actor: tmdb
+      sort_title: 001_+<<level>>_<<sort_title_name>>
       sync_mode: append
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: false
+    visible_library: true
+    visible_shared: true
+    visible_home: true
 
-    Holiday:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-        - videos
-      sort_title: 060_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      url_poster: <<poster_url>>
-      template: { name: Prerolls,
-                  videos: /data/plex/pre-rolls/Christmas/Christmas_Lights_Plex_Pre-roll.mp4 }
-      run_again: false
-      visible_home: false
-      visible_shared: false
-      visible_library: false
-
-    Collection:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 065_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: true
-      url_poster: <<poster_url>>
-
-    Franchise:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 066_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: true
-      url_poster: <<poster_url>>
-
-    Genre:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 070_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: false
-      url_poster: <<poster_url>>
-
-    Decade:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 080_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: false
-      url_poster: <<poster_url>>
-
-    Person:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      smart_filter:
-        sort_by: release.desc
-        any:
-          actor: tmdb
-          director: tmdb
-          producer: tmdb
-          writer: tmdb
-      tmdb_person: <<person>>
-      sort_title: 090_+<<level>>_<<sort_title_name>>
+  InMemoriamDirector:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_person: <<tmdb_id>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        director: tmdb
+      sort_title: 002_+<<level>>_<<sort_title_name>>
       sync_mode: append
-      visible_library: false
+    visible_library: true
+    visible_shared: true
+    visible_home: true
 
-    Actor:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      tmdb_actor_details: <<person>>
-      sort_title: 090_+<<level>>_<<sort_title_name>>
-      sync_mode: append
-      visible_library: false
+  New:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 010_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    url_poster: <<poster_url>>
 
-    Director:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      tmdb_director_details: <<person>>
-      sort_title: 091_+<<level>>_<<sort_title_name>>
-      sync_mode: append
-      visible_library: false
+  Chart:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 040_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    url_poster: <<poster_url>>
 
-    Producer:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      tmdb_producer_details: <<person>>
-      sort_title: 092_+<<level>>_<<sort_title_name>>
-      sync_mode: append
-      visible_library: false
+  Award:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 050_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(sunday)
+    visible_library: false
+    url_poster: <<poster_url>>
 
-    Studio:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster
-      sort_title: 100_+<<level>>_<<sort_title_name>>
-      smart_filter:
-        sort_by: release.desc
-        validate: false
-        any:
-          studio: <<studio>>
-      url_poster: <<poster>>
+  ActorAward:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    smart_filter: # smart filter means Plex will automatically update the collection when new movies are added, rather than having to rerun the script
+      sort_by: release.desc
+      all:
+        actor: tmdb
+    tmdb_person: <<tmdb>>
+    sort_title: 052_+<<level>>_<<sort_title_name>>
+    sync_mode: append
+    schedule:
+      - weekly(sunday)
+    visible_library: false
 
-    Network:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster
-      sort_title: 100_+<<level>>_<<sort_title_name>>
-      smart_filter:
-        sort_by: title.desc
-        validate: false
-        any:
-          network: <<network>>
-      url_poster: <<poster>>
+  Holiday:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 060_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    url_poster: <<poster_url>>
+    minimum_items: 3
+    # delete_not_scheduled: true
+    visible_home: false
+    visible_shared: false
+    visible_library: false
 
-    Country:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 110_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: false
-      url_poster: <<poster_url>>
+  Collection:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 065_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(tuesday)
+      - weekly(friday)
+    visible_library: true
+    url_poster: <<poster_url>>
 
-    Request:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      optional:
-        - poster_url
-      sort_title: 010_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule: daily
-      visible_library: true
-      url_poster: <<poster_url>>
+  Franchise:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 066_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(wednesday)
+      - weekly(saturday)
+    visible_library: true
+    url_poster: <<poster_url>>
 
-    General:
-      default:
-        level: ""
-        sort_title_name: <<collection_name>>
-      sort_title: 120_+<<level>>_<<sort_title_name>>
-      sync_mode: sync
-      schedule:
-        - weekly(wednesday)
-        - weekly(sunday)
-      visible_library: true
+  Genre:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 070_+<<level>>_<<sort_title_name>>
+    sync_mode: append
+    schedule:
+      - weekly(monday)
+      - weekly(thursday)
+    visible_library: false
+    url_poster: <<poster_url>>
+
+  Decade:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 080_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(monday)
+      - weekly(thursday)
+    visible_library: false
+    url_poster: <<poster_url>>
+
+  Person:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        actor: tmdb
+        director: tmdb
+        producer: tmdb
+        writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: 090_+<<level>>_<<sort_title_name>>
+    sync_mode: append
+    visible_library: false
+
+  Actor:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_actor_details: <<person>>
+    sort_title: 090_+<<level>>_<<sort_title_name>>
+    sync_mode: append
+    visible_library: false
+
+  Director:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_director_details: <<person>>
+    sort_title: 091_+<<level>>_<<sort_title_name>>
+    sync_mode: append
+    visible_library: false
+
+  Producer:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_producer_details: <<person>>
+    sort_title: 092_+<<level>>_<<sort_title_name>>
+    sync_mode: append
+    visible_library: false
+
+  Studio:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster
+    sort_title: 100_+<<level>>_<<sort_title_name>>
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      any:
+        studio: <<studio>>
+    url_poster: <<poster>>
+    schedule:
+      - weekly(wednesday)
+
+  Network:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster
+    sort_title: 100_+<<level>>_<<sort_title_name>>
+    smart_filter:
+      sort_by: title.desc
+      validate: false
+      any:
+        network: <<network>>
+    url_poster: <<poster>>
+    schedule:
+      - weekly(wednesday)
+
+  Country:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 110_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(saturday)
+    visible_library: false
+    url_poster: <<poster_url>>
+
+  Language:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 115_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(saturday)
+    visible_library: false
+    url_poster: <<poster_url>>
+
+  General:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    sort_title: 120_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+
+  PreRoll:
+    schedule: daily
+    build_collection: false
