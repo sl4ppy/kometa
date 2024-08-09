@@ -11,8 +11,10 @@ libraries:                           # This is called out once within the config
       
       - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/collections/holidays/holiday-movies.yml
       #- repo: collections/holidays/movies
-      - repo: collections/random/movies
-      - repo: collections/separators/movies
+      - url: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/collections/random/movies.yml
+      - url: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/collections/separators/movies.yml
+      - url: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/collections/lists/movies.yml
+      - url: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/collections/trending/movies.yml
 
       - default: tautulli
       - default: universe
@@ -77,6 +79,8 @@ libraries:                           # This is called out once within the config
       - file: config/collections/series-requests.yml
       #- repo: collections/new/shows
       #- repo: collections/separators/shows 
+      - url: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/collections/networks/shows.yml
+
 
     overlay_files:
       - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/overlays/status.yml
@@ -138,8 +142,6 @@ libraries:                           # This is called out once within the config
       mass_critic_rating_update: mdb_tomatoes
       mass_audience_rating_update: mdb_tomatoesaudience
       mass_user_rating_update: mdb_tomatoes
-      mass_episode_critic_rating_update: mdb_tomatoes
-      mass_episode_audience_rating_update: mdb_tomatoesaudience
 
 
 
@@ -187,10 +189,10 @@ settings:
   ignore_imdb_ids:
   item_refresh_delay: 0
   playlist_sync_to_users: all
-  playlist_exclude_users:
+  playlist_exclude_users: 
   playlist_report: false
   verify_ssl: true
-  custom_repo: https://raw.githubusercontent.com/sl4ppy/kometa
+  custom_repo: https://raw.githubusercontent.com/sl4ppy/kometa/
   overlay_artwork_filetype: jpg
   overlay_artwork_quality: 75
 webhooks:                            # Can be individually specified per library as well
