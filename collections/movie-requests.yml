@@ -1,6 +1,5 @@
 #####################################################
 #              Movie User Tag Collections           #
-#  - Replace "User" with actual Radarr username     #
 #####################################################
 
 # external_templates:
@@ -22,11 +21,75 @@
 
 
 collections:
-  Users's Requested Movies:
-    radarr_taglist: "1 - User"
-    sort_title: "!000_User's Requested Movies"
-    label.sync: ["PMM","User"]
-    #collection_order: custom
+  sl4ppy's Requested Movies:
+    radarr_taglist: "1 - sl4ppy"
+    sort_title: "!000_Sl4ppy's Requested Movies"
+    label.sync: ["PMM","Sl4ppy"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+  
+  kristinrae1124's Requested Movies:
+    radarr_taglist: "6 - kristinrae1124"
+    sort_title: "!000_kristinrae1124's Requested Movies"
+    label.sync: ["PMM","kristinrae1124"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+  
+  marktx's Requested Movies:
+    radarr_taglist: "7 - marktx"
+    sort_title: "!000_marktx's Requested Movies"
+    label.sync: ["PMM","marktx"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+  
+  mwil11's Requested Movies:
+    radarr_taglist: "8 - mwil11"
+    sort_title: "!000_mwil11's Requested Movies"
+    label.sync: ["PMM","mwil11"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+  
+  sl4ppy13's Requested Movies:
+    radarr_taglist: "9 - sl4ppy13"
+    sort_title: "!000_sl4ppy13's Requested Movies"
+    label.sync: ["PMM","sl4ppy13"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+  
+  Thugmoor's Requested Movies:
+    radarr_taglist: "10 - Thugmoor"
+    sort_title: "!000_Thugmoor's Requested Movies"
+    label.sync: ["PMM","Thugmoor"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+  
+  chrystal's Requested Movies:
+    radarr_taglist: "11 - chrystal"
+    sort_title: "!000_chrystal's Requested Movies"
+    label.sync: ["PMM","chrystal"]
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    visible_shared: false
+    visible_users:
+      - sl4ppy
+  
+  mark_wilner's Requested Movies:
+    radarr_taglist: "12 - mark_wilner"
+    sort_title: "!000_mark_wilner's Requested Movies"
+    label.sync: ["PMM","mark_wilner"]
     sync_mode: sync
     schedule: daily
     visible_library: true
