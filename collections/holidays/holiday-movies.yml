@@ -1,6 +1,6 @@
 external_templates:
-  - repo: config/templates/collections.yml
-  - repo: config/templates/dynamic_collections.yml
+  - repo: /main/config/templates/collections.yml
+  - repo: /main/config/templates/dynamic_collections.yml
 
 collections:
 
