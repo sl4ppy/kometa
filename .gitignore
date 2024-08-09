@@ -4,3 +4,5 @@ UUID
 *.sublime-project
 *.sublime-workspace
 config.yml
+collections/movie-requests.yml
+collections/series-requests.yml
