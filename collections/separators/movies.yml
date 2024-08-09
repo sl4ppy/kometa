@@ -1,0 +1,98 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Each needs a placeholder movie, can't be empty collections
+  # Movie MUST be in the library, so try to use a popular movie likely to be on any given server
+  "Awards":
+    template: { name: Award,
+                level: "++++++++++" }
+    summary: "Awards"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
+    tmdb_movie: https://www.themoviedb.org/movie/13 # Forrest Gump (1994)
+
+  "Holidays":
+    template: { name: Holiday,
+                level: "++++++++++" }
+    summary: "Holidays"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
+    tmdb_movie: https://www.themoviedb.org/movie/671 # Harry Potter and the Philosopher's Stone (2001)
+
+  "Collections":
+    template: { name: Collection,
+                level: "++++++++++" }
+    summary: "Collections"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
+    tmdb_movie: https://www.themoviedb.org/movie/238 # The Godfather (1972)
+
+  "Franchises":
+    template: { name: Franchise,
+                level: "++++++++++" }
+    summary: "Franchises"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
+    tmdb_movie: https://www.themoviedb.org/movie/1726 # Iron Man (2008)
+
+  "Genres":
+    template: { name: Genre,
+                level: "++++++++++" }
+    summary: "Genres"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
+    tmdb_movie: https://www.themoviedb.org/movie/85 # Raiders of the Lost Ark (1981)
+
+  "Decades":
+    template: { name: Decade,
+                level: "++++++++++" }
+    summary: "Decades"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+
+  "Studios":
+    template: { name: Studio,
+                level: "++++++++++",
+                studio: "A24", # No single placeholder movie, will use studio
+                poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/studios.jpg }
+    summary: "Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+

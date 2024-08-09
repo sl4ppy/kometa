@@ -1,0 +1,103 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Each needs a placeholder show, can't be empty collections
+  # Show be in the library, so try to use a popular show likely to be on any given server
+  "Awards":
+    template: { name: Award,
+                level: "++++++++++" }
+    summary: "Awards"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
+
+  "Holidays":
+    template: { name: Holiday,
+                level: "++++++++++" }
+    summary: "Holidays"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
+
+  "Collections":
+    template: { name: Collection,
+                level: "++++++++++" }
+    summary: "Collections"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
+
+  "Franchises":
+    template: { name: Franchise,
+                level: "++++++++++" }
+    summary: "Franchises"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
+
+  "Genres":
+    template: { name: Genre,
+                level: "++++++++++" }
+    summary: "Genres"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
+
+  "Decades":
+    template: { name: Decade,
+                level: "++++++++++" }
+    summary: "Decades"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
+
+  "Networks":
+    template: { name: Network,
+                network: "FOX",
+                level: "++++++++++",
+                poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/networks.jpg }
+    summary: "Networks"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    schedule: daily
+    minimum_items: 1
+    delete_below_minimum: false # Don't delete the placeholder
+
