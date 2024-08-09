@@ -100,7 +100,6 @@ libraries:                           # This is called out once within the config
 
       - default: ratings
         template_variables:
-          builder_level: Episode
           minimum_items: 1
           
           rating1: critic
