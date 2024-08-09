@@ -1,6 +1,6 @@
 external_templates:
-  - repo: /main/config/templates/collections.yml
-  - repo: /main/config/templates/dynamic_collections.yml
+  - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/collections.yml
+  - url: https://raw.githubusercontent.com/sl4ppy/kometa/main/dynamic_collections.yml
 
 collections:
 
