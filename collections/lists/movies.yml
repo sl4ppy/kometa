@@ -33,6 +33,63 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "📽️ The Criterion Collection":
+    template: { name: Collection,
+                sort_title: "The Criterion Collection",
+                level: "++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+    collection_order: critic_rating.desc
+    # default schedule
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+
+  "🦸 Avengers Assemble!":
+    template: { name: Franchise,
+                sort_title: "Marvel Cinematic Universe",
+                level: "+" }
+    name_mapping: "Marvel Cinematic Universe Collection"
+    summary: "The Marvel Cinematic Universe"
+    trakt_list:
+      - https://trakt.tv/users/cybercelia/lists/mcu
+    collection_order: release
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🦸 Tell Me, Do You Bleed?":
+    template: { name: Franchise,
+                sort_title: "DC Cinematic Universe",
+                level: "+" }
+    name_mapping: "DC Cinematic Universe Collection"
+    summary: "The DC Cinematic Universe"
+    trakt_list:
+      - https://trakt.tv/users/maxrax/lists/dc-cinematics
+    collection_order: release
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🚀 In A Galaxy Far, Far Away":
+    summary: "The Star Wars collection"
+    template: { name: Franchise,
+                sort_title: "Star Wars",
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
+    url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
+    collection_order: custom
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+    
   # # Worst movies of all time, updated monthly
   # "💩 Just the Worst":
   #   template: { name: Collection,
@@ -158,33 +215,21 @@ collections:
   #   visible_home: true
   #   visible_shared: true
 
-  "📽️ The Criterion Collection":
-    template: { name: Collection,
-                sort_title: "The Criterion Collection",
-                level: "++" }
-    # summary provided by Trakt
-    trakt_list_details:
-      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
-    collection_order: critic_rating.desc
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
 
   ### GENERAL ###
 
-  "🏷️ A Blockbuster Night":
-    template: { name: Collection,
-                level: "+" }
-    summary: "Make it a Blockbuster Night"
-    trakt_list:
-      - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
-      - https://trakt.tv/users/steffe73/lists/filmer-som-jag-har-pa-vhs
-    collection_order: random
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "🏷️ A Blockbuster Night":
+  #   template: { name: Collection,
+  #               level: "+" }
+  #   summary: "Make it a Blockbuster Night"
+  #   trakt_list:
+  #     - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
+  #     - https://trakt.tv/users/steffe73/lists/filmer-som-jag-har-pa-vhs
+  #   collection_order: random
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
   # "️❌ Cancelled":
   #   template: { name: Collection,
@@ -214,33 +259,7 @@ collections:
   #   visible_home: false
   #   visible_shared: false
 
-  "🦸 Avengers Assemble!":
-    template: { name: Franchise,
-                sort_title: "Marvel Cinematic Universe",
-                level: "+" }
-    name_mapping: "Marvel Cinematic Universe Collection"
-    summary: "The Marvel Cinematic Universe"
-    trakt_list:
-      - https://trakt.tv/users/cybercelia/lists/mcu
-    collection_order: release
-    # default schedule
-    visible_library: true
-    visible_home: false
-    visible_shared: false
 
-  "🦸 Tell Me, Do You Bleed?":
-    template: { name: Franchise,
-                sort_title: "DC Cinematic Universe",
-                level: "+" }
-    name_mapping: "DC Cinematic Universe Collection"
-    summary: "The DC Cinematic Universe"
-    trakt_list:
-      - https://trakt.tv/users/maxrax/lists/dc-cinematics
-    collection_order: release
-    # default schedule
-    visible_library: true
-    visible_home: false
-    visible_shared: false
 
   # "🐭 Disney Channel Original Movies":
   #   template: { name: Franchise,
@@ -270,19 +289,7 @@ collections:
   #   visible_home: false
   #   visible_shared: false
 
-  "🚀 In A Galaxy Far, Far Away":
-    summary: "The Star Wars collection"
-    template: { name: Franchise,
-                sort_title: "Star Wars",
-                level: "+" }
-    trakt_list_details:
-      - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
-    url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
-    collection_order: custom
-    # default schedule
-    visible_library: true
-    visible_home: false
-    visible_shared: false
+
 
   # "👽 Bears. Beets. Battlestar Galactica":
   #   summary: "The Battlestar Galactica collection"
