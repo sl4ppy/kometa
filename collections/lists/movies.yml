@@ -33,130 +33,130 @@ collections:
     visible_home: true
     visible_shared: true
 
-  # Worst movies of all time, updated monthly
-  "💩 Just the Worst":
-    template: { name: Collection,
-                sort_title: "Worst Movies Ever",
-                level: "++" }
-    name_mapping: "Just the Worst Collection"
-    summary: "The worst movies of all time."
-    trakt_list:
-      - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
-      - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
-    collection_order: random
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # # Worst movies of all time, updated monthly
+  # "💩 Just the Worst":
+  #   template: { name: Collection,
+  #               sort_title: "Worst Movies Ever",
+  #               level: "++" }
+  #   name_mapping: "Just the Worst Collection"
+  #   summary: "The worst movies of all time."
+  #   trakt_list:
+  #     - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
+  #     - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
+  #   collection_order: random
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-    # Biggest box office bombs, according to Wikipedia, updated monthly
-  "💣 Box Office Bombs":
-    template: { name: Collection,
-                sort_title: "Box Office Bombs",
-                level: "++" }
-    name_mapping: "Box Office Bombs Collection"
-    summary: "Tired tropes, sky-high budgets, global pandemics or just plain bad? Either way, these movies bombed at the box office."
-    trakt_list: https://trakt.tv/users/nwithan8/lists/biggest-box-office-bombs?sort=rank,asc
-    collection_order: random
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  #   # Biggest box office bombs, according to Wikipedia, updated monthly
+  # "💣 Box Office Bombs":
+  #   template: { name: Collection,
+  #               sort_title: "Box Office Bombs",
+  #               level: "++" }
+  #   name_mapping: "Box Office Bombs Collection"
+  #   summary: "Tired tropes, sky-high budgets, global pandemics or just plain bad? Either way, these movies bombed at the box office."
+  #   trakt_list: https://trakt.tv/users/nwithan8/lists/biggest-box-office-bombs?sort=rank,asc
+  #   collection_order: random
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  ### PODCASTS ###
+  # ### PODCASTS ###
 
-  "🤨 How Did This Get Made?":
-    template: { name: Collection,
-                sort_title: "How Did This Get Made?",
-                level: "++" }
-    summary: "The films of the podcast 'How Did This Get Made?'"
-    trakt_list:
-      - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
-    collection_order: custom
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "🤨 How Did This Get Made?":
+  #   template: { name: Collection,
+  #               sort_title: "How Did This Get Made?",
+  #               level: "++" }
+  #   summary: "The films of the podcast 'How Did This Get Made?'"
+  #   trakt_list:
+  #     - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
+  #   collection_order: custom
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  "👍 Best Movie Ever":
-    template: { name: Collection,
-                sort_title: "Weekly Planet - Best Movie Ever",
-                level: "++" }
-    trakt_list_details:
-      - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
-    collection_order: random
-    schedule: daily
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "👍 Best Movie Ever":
+  #   template: { name: Collection,
+  #               sort_title: "Weekly Planet - Best Movie Ever",
+  #               level: "++" }
+  #   trakt_list_details:
+  #     - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
+  #   collection_order: random
+  #   schedule: daily
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  "👎 Worst Movie Ever":
-    template: { name: Collection,
-                sort_title: "Weekly Planet - Worst Movie Ever",
-                level: "++" }
-    trakt_list_details:
-      - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
-    collection_order: random
-    schedule: daily
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "👎 Worst Movie Ever":
+  #   template: { name: Collection,
+  #               sort_title: "Weekly Planet - Worst Movie Ever",
+  #               level: "++" }
+  #   trakt_list_details:
+  #     - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
+  #   collection_order: random
+  #   schedule: daily
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  "📼 The Video Archives Podcast":
-    template: { name: Collection,
-                sort_title: "The Video Archives Podcast",
-                level: "++" }
-    trakt_list_details:
-      - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
-    summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
-    collection_order: custom
-    schedule: daily
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "📼 The Video Archives Podcast":
+  #   template: { name: Collection,
+  #               sort_title: "The Video Archives Podcast",
+  #               level: "++" }
+  #   trakt_list_details:
+  #     - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
+  #   summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
+  #   collection_order: custom
+  #   schedule: daily
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  "🎙️ Nate Reviews":
-    template: { name: Collection,
-                sort_title: "Nate Reviews",
-                level: "++" }
-    summary: "Every movie from the Nate Reviews YouTube series"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
-    collection_order: custom
-    schedule: daily
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "🎙️ Nate Reviews":
+  #   template: { name: Collection,
+  #               sort_title: "Nate Reviews",
+  #               level: "++" }
+  #   summary: "Every movie from the Nate Reviews YouTube series"
+  #   trakt_list:
+  #     - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
+  #   collection_order: custom
+  #   schedule: daily
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  ### LISTS ###
+  # ### LISTS ###
 
-  "🎩 1001 Movies You Must See Before You Die":
-    template: { name: Collection,
-                sort_title: "1001 Movies You Must See Before You Die",
-                level: "++" }
-    name_mapping: "1001 Movies You Must See Before You Die Collection"
-    # summary provided by Trakt
-    trakt_list_details:
-      - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
-    collection_order: random
-    schedule: monthly(03)
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "🎩 1001 Movies You Must See Before You Die":
+  #   template: { name: Collection,
+  #               sort_title: "1001 Movies You Must See Before You Die",
+  #               level: "++" }
+  #   name_mapping: "1001 Movies You Must See Before You Die Collection"
+  #   # summary provided by Trakt
+  #   trakt_list_details:
+  #     - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+  #   collection_order: random
+  #   schedule: monthly(03)
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  "🪣 100 Movies Bucket List":
-    template: { name: Collection,
-                sort_title: "100 Movies Bucket List",
-                level: "++",
-                poster_url: https://m.media-amazon.com/images/I/81KZufVPTgL._AC_SL1500_.jpg }
-    # summary provided by Trakt
-    trakt_list_details:
-      - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
-    collection_order: custom
-    schedule: monthly(04)
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "🪣 100 Movies Bucket List":
+  #   template: { name: Collection,
+  #               sort_title: "100 Movies Bucket List",
+  #               level: "++",
+  #               poster_url: https://m.media-amazon.com/images/I/81KZufVPTgL._AC_SL1500_.jpg }
+  #   # summary provided by Trakt
+  #   trakt_list_details:
+  #     - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
+  #   collection_order: custom
+  #   schedule: monthly(04)
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
   "📽️ The Criterion Collection":
     template: { name: Collection,
@@ -186,35 +186,35 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "️❌ Cancelled":
-    template: { name: Collection,
-                level: "+" }
-    name_mapping: "Cancelled Collection"
-    summary: "Actors, directors, and writers who have been cancelled"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/cancelled
-    collection_order: random
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # "️❌ Cancelled":
+  #   template: { name: Collection,
+  #               level: "+" }
+  #   name_mapping: "Cancelled Collection"
+  #   summary: "Actors, directors, and writers who have been cancelled"
+  #   trakt_list:
+  #     - https://trakt.tv/users/nwithan8/lists/cancelled
+  #   collection_order: random
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: true
+  #   visible_shared: true
 
-  ### FRANCHISES ###
+  # ### FRANCHISES ###
 
-  "🤵‍♂️ Bond. James Bond.":
-    template: { name: Franchise,
-                sort_title: "James Bond",
-                level: "+" }
-    name_mapping: "James Bond Collection"
-    summary: "007 forever"
-    mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
-    collection_order: release
-    # default schedule
-    visible_library: true
-    visible_home: false
-    visible_shared: false
+  # "🤵‍♂️ Bond. James Bond.":
+  #   template: { name: Franchise,
+  #               sort_title: "James Bond",
+  #               level: "+" }
+  #   name_mapping: "James Bond Collection"
+  #   summary: "007 forever"
+  #   mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
+  #   collection_order: release
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: false
+  #   visible_shared: false
 
-  "🦸 I Love You 3000":
+  "🦸 Avengers Assemble!":
     template: { name: Franchise,
                 sort_title: "Marvel Cinematic Universe",
                 level: "+" }
