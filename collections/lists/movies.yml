@@ -242,33 +242,33 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "🐭 Disney Channel Original Movies":
-    template: { name: Franchise,
-                sort_title: "Disney Channel Original Movies",
-                level: "+" }
-    name_mapping: "Disney Channel Original Movies Collection"
-    summary: "You're watching Disney Channel"
-    imdb_list:
-      - https://www.imdb.com/list/ls093405279
-    collection_order: release
-    # default schedule
-    visible_library: true
-    visible_home: false
-    visible_shared: false
+  # "🐭 Disney Channel Original Movies":
+  #   template: { name: Franchise,
+  #               sort_title: "Disney Channel Original Movies",
+  #               level: "+" }
+  #   name_mapping: "Disney Channel Original Movies Collection"
+  #   summary: "You're watching Disney Channel"
+  #   imdb_list:
+  #     - https://www.imdb.com/list/ls093405279
+  #   collection_order: release
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: false
+  #   visible_shared: false
 
-  "🪐 To Boldly Go":
-    summary: "The Star Trek collection"
-    template: { name: Franchise,
-                sort_title: "Star Trek",
-                level: "+" }
-    trakt_list:
-      - https://trakt.tv/users/dgw/lists/star-trek-canon
-    url_background: https://i.redd.it/vz20prnp8v551.jpg
-    collection_order: release
-    # default schedule
-    visible_library: true
-    visible_home: false
-    visible_shared: false
+  # "🪐 To Boldly Go":
+  #   summary: "The Star Trek collection"
+  #   template: { name: Franchise,
+  #               sort_title: "Star Trek",
+  #               level: "+" }
+  #   trakt_list:
+  #     - https://trakt.tv/users/dgw/lists/star-trek-canon
+  #   url_background: https://i.redd.it/vz20prnp8v551.jpg
+  #   collection_order: release
+  #   # default schedule
+  #   visible_library: true
+  #   visible_home: false
+  #   visible_shared: false
 
   "🚀 In A Galaxy Far, Far Away":
     summary: "The Star Wars collection"
